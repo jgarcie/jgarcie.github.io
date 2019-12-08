@@ -2253,6 +2253,12 @@
 		width: 360px;
 	}
 
+	@media screen and (max-width: 480px) {
+		.features-phone {
+			width: 240px !important;
+		}
+	}
+
 	.box {
 		background: #fff;
 		border-radius: 6px;
@@ -3220,7 +3226,7 @@
 
 	.logo {
 		margin-top:10px;
-		width: 200px;
+		width: 150px;
 	}
 
 	#main {
@@ -3482,10 +3488,6 @@
 
 			#page-wrapper {
 				padding-top: 0;
-			}
-
-			#header {
-				display: none;
 			}
 
 		/* Banner */

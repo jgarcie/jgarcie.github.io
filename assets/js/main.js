@@ -36,15 +36,15 @@
 	// NavPanel.
 
 		// Button.
-			$(
+			/*$(
 				'<div id="navButton">' +
 					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>'
 			)
-				.appendTo($body);
+				.appendTo($body);*/
 
 		// Panel.
-			$(
+			/*$(
 				'<div id="navPanel">' +
 					'<nav>' +
 						$('#nav').navList() +
@@ -61,7 +61,7 @@
 					side: 'left',
 					target: $body,
 					visibleClass: 'navPanel-visible'
-				});
+				});*/
 
 	// Header.
 		if (!browser.mobile
