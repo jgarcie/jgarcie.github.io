@@ -209,6 +209,10 @@ main {
     .sign-up-text {
         width: 220px;
     }
+
+    .footer {
+        margin: 30px 0;
+    }
 }
 
 @media (max-width: 376px) {
