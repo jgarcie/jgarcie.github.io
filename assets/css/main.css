@@ -7,6 +7,8 @@ html, body {
 
 .purple {
     color: #9A04FB;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
 }
 
 main {
