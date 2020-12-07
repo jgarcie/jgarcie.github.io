@@ -7,8 +7,6 @@ html, body {
 
 .purple {
     color: #9A04FB;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
 }
 
 main {
@@ -53,6 +51,15 @@ main {
     margin: 10px 0;
     text-align: center;
     width: 720px;
+    text-shadow:
+        0.015em 0 #2B0147,
+        0 0.015em #2B0147,
+        -0.015em 0 #2B0147,
+        0 -0.015em #2B0147,
+        -0.015em -0.015em #2B0147,
+        -0.015em 0.015em #2B0147,
+        0.015em -0.015em #2B0147,
+        0.015em 0.015em #2B0147;
 }
 
 .subtext {
