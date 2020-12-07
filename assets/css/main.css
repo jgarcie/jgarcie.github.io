@@ -51,15 +51,6 @@ main {
     margin: 10px 0;
     text-align: center;
     width: 720px;
-    text-shadow:
-        0.015em 0 #2B0147,
-        0 0.015em #2B0147,
-        -0.015em 0 #2B0147,
-        0 -0.015em #2B0147,
-        -0.015em -0.015em #2B0147,
-        -0.015em 0.015em #2B0147,
-        0.015em -0.015em #2B0147,
-        0.015em 0.015em #2B0147;
 }
 
 .subtext {
