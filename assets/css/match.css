@@ -75,11 +75,11 @@ main {
     bottom: 2px;
     display: flex;
     font-size: 180%;
-    height: 76px;
+    height: 60px;
     justify-content: center;
     position: relative;
     text-decoration: none;
-    width: 300px;
+    width: 240px;
 }
 
 .divider {
@@ -244,10 +244,6 @@ main {
 
     .sign-up-text {
         width: 175px;
-    }
-
-    .sign-up-button {
-        width: 260px;
     }
 }
 
