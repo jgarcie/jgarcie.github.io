@@ -1,0 +1,291 @@
+html, body {
+    background-color: #0D071E;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.purple {
+    color: #9A04FB;
+}
+
+main {
+    align-items: center;
+    background: url('../images/collage.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+}
+
+.header {
+    align-items: flex-start;
+    display: flex;
+    left: 0;
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    width: 96%;
+}
+
+.header-logo {
+    width: 160px;
+}
+
+.button {
+    background-color: #9A04FB;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 6px 20px;
+}
+
+.login {
+    margin-left: auto;
+}
+
+.main-text {
+    font-size: 76px;
+    margin: 10px 0;
+    text-align: center;
+    width: 80%;
+}
+
+.subtext {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+
+.sign-up-text {
+    border-radius: 8px;
+    font-size: 24px;
+    height: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 280px;
+}
+
+.sign-up-button {
+    align-items: center;
+    border-radius: 10px;
+    bottom: 2px;
+    display: flex;
+    font-size: 180%;
+    height: 76px;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    width: 300px;
+}
+
+.divider {
+    background-color:#0D071E;
+    height: 14px;
+    width: 100%;
+}
+
+.section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.section-text {
+    width: 600px;
+}
+
+.section-margin-first {
+    margin-right: 40px;
+}
+
+.section-margin-second {
+    margin-right: 200px;
+}
+
+.section-left h1, .section-right h1 {
+    font-size: 56px;
+}
+
+.section-left p, .section-right p {
+    font-size: 30px;
+}
+
+.section-left img, .section-right img {
+    height: 515px;
+}
+
+.footer {
+    align-items: center;
+    background-color: #0D071E;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 35px;
+    padding: 0;
+    width: 160px;
+}
+
+.social-icons li i {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (max-width: 1030px) {
+    .header {
+        width: 93%;
+    }
+
+    .section-margin-second {
+        margin-right: 75px;
+    }
+}
+
+@media (max-width: 770px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section-mid {
+        flex-direction: column-reverse;
+    }
+
+    .section-margin-first {
+        margin-right: 0px;
+    }
+
+    .section-margin-second {
+        margin-right: 0px;
+    }
+
+    .section-left img, .section-right img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 86%;
+    }
+
+    main {
+        background: url('../images/collage-sm.png') no-repeat center center;
+        height: 600px;
+    }
+
+    .main-text {
+        font-size: 40px;
+        width: 400px;
+    }
+
+    .subtext {
+        font-size: 28px;
+    }
+
+    .section-text {
+        width: 360px;
+    }
+
+    .section-left h1, .section-right h1 {
+        font-size: 32px;
+    }
+
+    .section-left p, .section-right p {
+        font-size: 20px;
+    }
+
+    .section-left img, .section-right img {
+        height: 360px;
+    }
+
+    .lg-img-sec img {
+        height: 285px;
+    }
+
+    .sign-up-text {
+        width: 220px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .header {
+        width: 80%;
+    }
+
+    .main-text {
+        width: 375px;
+    }
+
+    .lg-img-sec img {
+        height: 220px !important;
+    }
+
+    .section-left img, .section-right img {
+        height: 320px;
+    }
+
+    .sign-up-text {
+        width: 175px;
+    }
+
+    .sign-up-button {
+        width: 260px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-text {
+        font-size: 32px;
+        width: 320px;
+    }
+
+    .section-text {
+        width: 280px;
+    }
+
+    .section-left h1, .section-right h1 {
+        font-size: 26px;
+    }
+
+    .section-left p, .section-right p {
+        font-size: 16px;
+    }
+
+    .section-left img, .section-right img {
+        height: 280px;
+    }
+
+    .sign-up-text {
+        width: 120px;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
