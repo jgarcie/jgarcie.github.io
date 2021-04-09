@@ -1,5 +1,5 @@
 html, body {
-    background-color: #1E1142;
+    background-color: #0D071E;
     color: #FFFFFF;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@ html, body {
 
 main {
     align-items: center;
-    background: url('../images/collage.png') no-repeat center center;
+    background: url('../images/croo_background-01.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -47,17 +47,18 @@ main {
 }
 
 .main-text {
-    font-size: 76px;
+    font-size: 50px;
     margin: 10px 0;
     text-align: center;
-    width: 720px;
+    width: 80%;
 }
 
 .subtext {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: normal;
     margin: 10px 0 30px;
     text-align: center;
+    width: 60%;
 }
 
 .sign-up-text {
@@ -70,10 +71,17 @@ main {
 }
 
 .sign-up-button {
+    align-items: center;
+    border-radius: 10px;
     bottom: 2px;
-    height: 54px;
-    margin-left: 10px;
+    display: flex;
+    font-size: 180%;
+    height: 60px;
+    justify-content: center;
+    margin-top: 26px;
     position: relative;
+    text-decoration: none;
+    width: 240px;
 }
 
 .divider {
@@ -135,6 +143,10 @@ main {
     font-size: 40px;
 }
 
+.copyright {
+    text-align: center;
+}
+
 @media (max-width: 1030px) {
     .header {
         width: 93%;
@@ -179,7 +191,7 @@ main {
 
     .main-text {
         font-size: 40px;
-        width: 370px;
+        width: 400px;
     }
 
     .subtext {
@@ -218,6 +230,10 @@ main {
 @media (max-width: 376px) {
     .header {
         width: 80%;
+    }
+
+    .main-text {
+        width: 375px;
     }
 
     .lg-img-sec img {
