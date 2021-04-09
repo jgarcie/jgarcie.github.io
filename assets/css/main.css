@@ -148,10 +148,6 @@ main {
 }
 
 @media (max-width: 1030px) {
-    .header {
-        width: 93%;
-    }
-
     .section-margin-second {
         margin-right: 75px;
     }
@@ -180,22 +176,17 @@ main {
 }
 
 @media (max-width: 600px) {
-    .header {
-        width: 86%;
-    }
-
     main {
-        background: url('../images/collage-sm.png') no-repeat center center;
         height: 600px;
     }
 
     .main-text {
-        font-size: 40px;
+        font-size: 30px;
         width: 400px;
     }
 
     .subtext {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .section-text {
@@ -228,10 +219,6 @@ main {
 }
 
 @media (max-width: 376px) {
-    .header {
-        width: 80%;
-    }
-
     .main-text {
         width: 375px;
     }
@@ -251,7 +238,7 @@ main {
 
 @media (max-width: 320px) {
     .main-text {
-        font-size: 32px;
+        font-size: 30px;
         width: 320px;
     }
 
