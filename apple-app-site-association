@@ -1,9 +1,0 @@
-{
-    "applinks": {
-        "apps": [],
-        "details": [{
-            "appID": "7BCYMJN866.com.croo.app",
-            "paths": ["/registration/*"]
-        }]
-    }
-}
