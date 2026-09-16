@@ -1,0 +1,324 @@
+/* Good Meat press kit — page-specific layout */
+
+body.presskit {
+  padding: 32px 20px 80px;
+}
+
+.presskit-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.presskit-back {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  margin-bottom: 28px;
+  border-bottom: 1px solid transparent;
+}
+
+.presskit-back:hover,
+.presskit-back:focus-visible {
+  color: var(--color-ink-soft);
+  border-bottom-color: var(--color-muted-light);
+}
+
+/* Header */
+
+.pk-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.pk-key-art {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border: 1px solid var(--color-hairline);
+  margin-bottom: 24px;
+}
+
+.pk-title {
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.pk-tagline {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Layout: sidebar + content */
+
+.pk-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 680px) {
+  .pk-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pk-factsheet {
+  border: 1px solid var(--color-hairline);
+  padding: 20px;
+  font-size: 0.85rem;
+  position: sticky;
+  top: 24px;
+}
+
+@media (max-width: 680px) {
+  .pk-factsheet {
+    position: static;
+  }
+}
+
+.pk-factsheet h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin: 0 0 16px;
+}
+
+.pk-factsheet dl {
+  margin: 0;
+}
+
+.pk-factsheet dt {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 14px;
+}
+
+.pk-factsheet dt:first-child {
+  margin-top: 0;
+}
+
+.pk-factsheet dd {
+  margin: 2px 0 0;
+  color: var(--color-ink-soft);
+}
+
+/* Sections */
+
+.pk-section {
+  margin: 0 0 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.pk-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.pk-section h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 18px;
+}
+
+.pk-section p {
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+}
+
+.pk-section ul {
+  padding-left: 1.2em;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+}
+
+.pk-section li {
+  margin-bottom: 8px;
+}
+
+.pk-placeholder-note {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: var(--color-muted-light);
+  border: 1px dashed var(--color-hairline);
+  padding: 4px 8px;
+}
+
+/* Screenshots grid */
+
+.pk-shot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 680px) {
+  .pk-shot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pk-shot {
+  border: 1px solid var(--color-hairline);
+  display: block;
+  overflow: hidden;
+}
+
+.pk-shot img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Trailer */
+
+.pk-trailer-box {
+  border: 1px dashed var(--color-hairline);
+  aspect-ratio: 16 / 9;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  padding: 20px;
+}
+
+.pk-trailer-embed {
+  border: 1px solid var(--color-hairline);
+  aspect-ratio: 16 / 9;
+  max-width: 640px;
+}
+
+.pk-trailer-embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Downloads */
+
+.pk-download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.pk-download-card {
+  border: 1px solid var(--color-hairline);
+  padding: 16px;
+  text-align: center;
+}
+
+.pk-download-card img {
+  max-height: 90px;
+  width: auto;
+  margin: 0 auto 12px;
+}
+
+.pk-download-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-muted-light);
+}
+
+.pk-download-card a:hover,
+.pk-download-card a:focus-visible {
+  color: var(--color-ink-soft);
+}
+
+/* Team */
+
+.pk-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.pk-team-member img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--color-hairline);
+  margin-bottom: 10px;
+}
+
+.pk-team-member h3 {
+  font-size: 0.9rem;
+  margin: 0 0 2px;
+}
+
+.pk-team-member p {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Contact / zip */
+
+.pk-contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.pk-contact-list li {
+  margin-bottom: 6px;
+}
+
+.pk-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.pk-social-link:hover,
+.pk-social-link:focus-visible {
+  color: var(--color-ink);
+  border-bottom-color: var(--color-muted-light);
+}
+
+.pk-social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.pk-zip-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border: 1px solid var(--color-ink);
+  color: var(--color-ink);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pk-zip-button:hover,
+.pk-zip-button:focus-visible {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.pk-footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-muted-light);
+}

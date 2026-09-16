@@ -1,0 +1,72 @@
+/* Hi Water Games — shared base styles */
+
+:root {
+  --color-bg: #ffffff;
+  --color-ink: #1a1a1a;
+  --color-ink-soft: #333333;
+  --color-muted: #767676;
+  --color-muted-light: #a3a3a3;
+  --color-hairline: #e2e2e2;
+  --font-mono: 'Space Mono', 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --max-width: 880px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Homepage */
+
+.home-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.studio-title {
+  font-size: clamp(1.6rem, 5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0 0 14px;
+  letter-spacing: 0.02em;
+}
+
+.press-link {
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  color: var(--color-muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.press-link:hover,
+.press-link:focus-visible {
+  color: var(--color-ink-soft);
+  border-bottom-color: var(--color-muted-light);
+}
